@@ -7,6 +7,8 @@ console.log(sum([1, 2]));
 
 export default class Validator {   
     static validateUsername(name) {
-        return /^[^-\d_]\w+[_\d-]{0,3}\w+[^-\d_]$/.test(name);
+        if (/^[^-\d_][A-Za-z]+[_\d-]+[A-Za-z]+[^-\d_]$/.test(name)) {
+            /\D\d{0,3}\D/.test(name);
+        };
     }
 };
