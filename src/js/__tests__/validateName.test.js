@@ -8,7 +8,12 @@ test('Expecting result true', () => {
       "-aaaaaa",
       "aaaaa-",
       "_aaaaaa",
-      "aaaaa_"   
+      "aaaaa_", 
+      "Pr01p1234yer",
+      "Андрей",
+      "Яrosla",
+      "ЫshtyЛ",
+      "N@bitator"  
     ];
 
   const rightName =[
