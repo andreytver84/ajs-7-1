@@ -26,18 +26,26 @@ const rightName =[
 
 const mixname = [
     "Andrey",
+    " Andrey",
+    "!Andrey",
+    "Andrey ",
+    " Andrey!",
     "Андрей",
     "Яrosla",
     "ЫshtyЛ",
     "N@bitator",
     "Nag1b000ter",
-    "Pr01p1234yer"
-]; */
+    "Pr01p1234yer",
+    "Pr01p1234ye1r",
+    "aaaa-aa4444aa",
+    "aa-aa_aa4444aa",
+    "aaaa-aa4444a_a"
+];  */
 
 export default class Validator {   
     static validateUsername(name) {
-        if (/^[^-\d_][A-Za-z_\d-]+[^-\d_]$/.test(name)) {
-            return /^\D+\d{0,3}\D+\d{0,3}\D+$/.test(name);
+        if (/^[A-Za-z]+[\w-]+[^-\d_][A-Za-z]+$/.test(name)) {
+            return !/[\d]{4}/.test(name);          
         } else {
             return false;
         }
