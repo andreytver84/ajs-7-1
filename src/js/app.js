@@ -44,12 +44,8 @@ const mixname = [
 
 export default class Validator {   
     static validateUsername(name) {
-        if (/^[A-Za-z]+[\w-]+[^-\d_][A-Za-z]+$/.test(name)) {
-            return !/[\d]{4}/.test(name);          
-        } else {
-            return false;
-        }
-    }
+        return /^[A-Za-z]+[\w-]+[^-\d_][A-Za-z]+$/.test(name) ? !/[\d]{4}/.test(name) : false; 
+    }       
 };
 
 /* rightName.forEach(item => {
